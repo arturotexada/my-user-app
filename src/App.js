@@ -28,9 +28,9 @@ function App() {
 
 
 const [ users, setUsers ] = useState(defaultUsers);
-const [ userEdit, setUserEdit ] = useState(null); {/* 3rd. State */}
+const [ userEdit, setUserEdit ] = useState(null);      //3rd. State 
 
-const addUser = user => {  // Esta función esta an App porque aqui está el State 
+const addUser = user => {    // Esta función esta an App porque aqui está el State 
   setUsers([...users, user]); 
 }
 
@@ -41,7 +41,7 @@ const deleteUser = id => {
    setUsers([...users])
 }
 
-const selectUser = user => setUserEdit(user); {/*2nd. Function Selecting*/}
+const selectUser = user => setUserEdit(user);     /*2nd. Function Selecting*/
 
 /* const removeUser = id => {
   setUsers(users.filter(user => user.id !== id))
